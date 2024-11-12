@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+    char data[100];
+
+    // Файлд бичих
+    file = fopen("myfile.txt", "w");
+    if (file == NULL) {
+        printf("Файлыг нээж чадсангүй!\n");
+        return 1;
+    }
+    fprintf(file, "Сайн байна уу? Энэ бол Си хэл дээрх файлд бичиж буй жишээ.\n");
+    fclose(file);
+    printf("Файлд амжилттай бичлээ.\n");
+
+    // Файлаас унших
+    file = fopen("myfile.txt", "r");
+    if (file == NULL) {
+        printf("Файлыг уншиж чадсангүй!\n");
+        return 1;
+    }
+    printf("Файлаас уншиж байна:\n");
+    while (fgets(data, 100, file) != NULL) {
+        printf("%s", data);
+    }
+    fclose(file);
+
+    return 0;
+}
