@@ -25,7 +25,7 @@ int main() {
         printf("%s", data);
     }
     fclose(file);
-
+mm
     return 0;
 } 
 negen zereg hiij bolkuu
