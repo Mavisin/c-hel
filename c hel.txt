@@ -28,5 +28,5 @@ int main() {
 mm
     return 0;
 } 
-negen zereg hiij bolkuu
+negen zereg hiij bolkuu yah gd bdg ymbeee
 
